@@ -1,0 +1,335 @@
+/* GLOBAL STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+
+  background-image: url("/images/code.jpeg");
+  background-size: cover; /* makes it fill the whole page */
+  background-position: center; /* keeps the subject centered */
+  background-repeat: no-repeat; /* prevents tiling */
+  background-attachment: fixed; /* makes it stay in place when scrolling */
+  color: white;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* 40% dark overlay */
+  z-index: -1; /* keeps it behind all content */
+}
+
+/* HEADER STYLING */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.2); /* transparent */
+  backdrop-filter: blur(6px); /* glass effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+/* LEFT SECTION */
+.section.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 135px;
+  width: auto;
+}
+
+.section.left h1 {
+  margin: 0;
+  font-size: 45px;
+  line-height: 1;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* NAVIGATION MENU */
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #1abc9c;
+}
+
+/* HAMBURGER BUTTON */
+.hamburger {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* HAMBURGER TO X ANIMATION */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* INTRO SECTION */
+.intro-section {
+  max-width: 850px;
+  margin: 200px auto 60px;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.intro-section h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.intro-section p {
+  font-size: 24px;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+/* FEATURED WORK SECTION */
+.featured-section {
+  margin: 40px auto 80px;
+  text-align: center;
+}
+
+.featured-section h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.featured-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  padding: 0 20px;
+}
+
+.featured-card {
+  width: 320px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.featured-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.featured-card h3 {
+  margin-bottom: 8px;
+  font-size: 22px;
+  color: #1abc9c;
+}
+
+.featured-card p {
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+/* BUTTON */
+.view-project-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #1abc9c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.view-project-btn:hover {
+  background: #159a82;
+  transform: scale(1.05);
+}
+
+/* TAGLINE QUOTE */
+.tagline-section {
+  margin: 40px 0 120px;
+  text-align: center;
+}
+
+.tagline-section p {
+  font-size: 35px;
+  font-style: italic;
+  opacity: 0.95;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Footer */
+.site-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  justify-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  color: white;
+}
+
+.footer-inner {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 15px;
+  text-align: center;
+}
+
+.site-footer .social-icons {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.site-footer .social-icons a {
+  display: inline-block;
+  margin: 0 8px;
+  color: white;
+}
+
+.site-footer .social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: 0.2s transform;
+  filter: brightness(0) invert(1); /* make icons white */
+}
+
+.site-footer .social-icons img:hover {
+  transform: scale(1.2); /* slight hover effect */
+  filter: brightness(1.2);
+}
+
+#linkedin {
+  width: 35px;
+  height: 35px;
+  filter: none;
+}
+
+#github {
+  width: 28px;
+  height: 28px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+}
+
+/* PORTFOLIO TITLE */
+.portfolio-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 40px;
+  margin-top: -20px; /* keeps padding from pushing title too low */
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: rgba(255, 255, 255, 0.2); /* transparent dropdown */
+    backdrop-filter: blur(6px);
+  }
+
+  .nav.active {
+    max-height: 500px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav a {
+    font-size: 20px;
+    color: white;
+  }
+}

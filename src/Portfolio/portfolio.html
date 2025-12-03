@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maklisa Portfolio</title>
+    <meta charset="UTF-8" />
+
+    <!-- <script src="../index.js" type="module" defer></script> -->
+    <script src="portfolio.js" type="module"></script>
+
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <header>
+      <div class="container">
+        <div class="section left">
+          <img src="/images/logo.png" alt="Logo" class="logo" />
+          <h1>Maklisa's Studio</h1>
+        </div>
+
+        <div class="header-inner">
+          <!-- Hamburger button -->
+          <button class="hamburger" aria-label="Open Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="nav" role="navigation" aria-label="Main navigation">
+            <ul>
+              <li><a href="../index.html" class="nav-link">Home</a></li>
+              <li>
+                <a href="../Portfolio/portfolio.html" class="nav-link"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="../About/about.html" class="nav-link">About Me</a>
+              </li>
+              <li>
+                <a href="../Contact/contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="portfolio-title">A Gallery of Digital Creations</h1>
+      <div id="project-container" class="project-container"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>
+          © <span id="currentYear"></span> Maklisa's Studio | Designed by
+          Maklisa Prifti
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/maklisa-prifti" target="_blank">
+            <img id="linkedin" src="/images/linkedin.jpg" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/tuk26019" target="_blank">
+            <img id="github" src="/images/github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

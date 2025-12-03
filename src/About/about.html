@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maklisa Portfolio</title>
+    <meta charset="UTF-8" />
+
+    <script src="../index.js" type="module" defer></script>
+    <script src="about.js" type="module"></script>
+
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <header>
+      <div class="container">
+        <div class="section left">
+          <img
+            src="/images/logo.png"
+            alt="Logo"
+            class="logo"
+          />
+          <h1>Maklisa's Studio</h1>
+        </div>
+
+        <div class="header-inner">
+          <!-- Hamburger button -->
+          <button class="hamburger" aria-label="Open Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="nav" role="navigation" aria-label="Main navigation">
+            <ul>
+              <li><a href="/src/index.html" class="nav-link">Home</a></li>
+              <li>
+                <a href="/src/Portfolio/portfolio.html" class="nav-link"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="/src/About/about.html" class="nav-link">About Me</a>
+              </li>
+              <li>
+                <a href="/src/Contact/contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- About Section -->
+      <section class="about-container">
+        <div class="about-img">
+          <img
+            src="/images/self-image.jpg"
+            alt="About Me"
+          />
+        </div>
+
+        <div class="about-text">
+          <h2>Let's Dive Into My World</h2>
+          <p>
+            I'm a dedicated full-stack developer with a strong passion for building clean, 
+            user-friendly, and visually appealing digital experiences. My background in 
+            front-end development, UX design, and database systems helps me blend creativity 
+            with technical problem-solving in everything I create.
+          </p>
+          <p>
+            I work confidently with modern JavaScript frameworks and enjoy turning ideas into 
+            well-designed, functional applications. My experience spans web design, mobile UI 
+            components, relational databases, and responsive websites built with tools like React, 
+            WordPress, HTML, CSS, and SQL.
+          </p>
+          <p>
+            Outside of coding, I love exploring new technologies, learning through hands-on projects, 
+            and finding creative inspiration through photography, travel, and design. Collaboration is 
+            important to me, and I enjoy working with others to bring meaningful ideas to life.
+          </p>
+          <div class="resume-buttons">
+            <!-- Download Button -->
+            <a href="../Maklisa_Prifti-resume.pdf" class="resume-btn download-btn" download>
+              ⬇ Download Resume
+            </a>
+          
+            <!-- View Button -->
+            <a href="../Maklisa_Prifti-resume.pdf" class="resume-btn view-btn" target="_blank" rel="noopener noreferrer">
+               View Resume
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills-section">
+        <div class="skills-container">
+          <!-- Technical Skills -->
+          <div class="skills-block">
+            <h2>Technical Skills</h2>
+            <ul>
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>GitHub</li>
+              <li>TypeScript</li>
+              <li>Tableau</li>
+              <li>SQL</li>
+              <li>Python</li>
+              <li>Jira</li>
+              <li>Scrum Methodology</li>
+              <li>Microsoft Office</li>
+            </ul>
+          </div>
+
+          <!-- General Skills -->
+          <div class="skills-block">
+            <h2>General Skills</h2>
+            <ul>
+              <li>Leadership</li>
+              <li>Attention to detail</li>
+              <li>Adaptability</li>
+              <li>Cross-Functional Collaboration</li>
+              <li>Communication</li>
+              <li>Team Collaboration</li>
+              <li>Problem Solving</li>
+              <li>Adaptability</li>
+              <li>Time Management</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education & Certification Section -->
+      <section class="edu-cert-section">
+        <div class="edu-cert-container">
+          <!-- Education -->
+          <div class="edu-cert-block education">
+            <h2>Education</h2>
+            <div class="edu-details">
+              <p class="degree">B.S. in Computer Science</p>
+              <p class="university">Temple University</p>
+              <p class="grad-year">Class of 2024</p>
+            </div>
+          </div>
+
+        <!-- Certifications Box -->
+        <div class="edu-cert-block certification">
+          <h2>Certifications</h2>
+          <div class="cert-details">
+            <div class="cert-card">
+              <p>Business Analytics Science - Temple University</p>
+            </div>
+            <div class="cert-card">
+              <p>Become a Full-Stack Developer - Linkedin Learning</p>
+            </div>
+            <div class="cert-card">
+              <p>Intermediate SQL for Data Scientists - Linkedin Learning</p>
+            </div>
+            <a href="https://www.linkedin.com/in/maklisa-prifti" target="_blank">
+              <button class="view-more-btn">View More</button>
+            </a>            
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Hire Me Section -->
+      <section class="why-hire-section">
+        <div class="why-hire-container">
+          <h2>Why Hire Me</h2>
+          <p>
+            I bring a unique combination of technical expertise, creativity, and problem-solving skills. 
+            With a strong foundation in full-stack development, UX design, and database management, 
+            I create user-friendly and visually appealing applications that deliver real value. 
+          </p>
+          <p>
+            I thrive in collaborative environments, adapt quickly to new challenges, and continuously 
+            seek opportunities to learn and innovate. My dedication to clean, efficient code and 
+            attention to detail ensures high-quality results, making me a reliable and enthusiastic 
+            addition to any team.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>
+          © <span id="currentYear"></span> Maklisa's Studio | Designed by
+          Maklisa Prifti
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/maklisa-prifti" target="_blank">
+            <img id="linkedin" src="/images/linkedin.jpg" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/tuk26019" target="_blank">
+            <img id="github" src="/images/github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

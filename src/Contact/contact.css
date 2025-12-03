@@ -1,0 +1,190 @@
+body {
+  overflow-y: auto;
+  padding-top: 130px;
+  padding-bottom: 45px;
+
+  background-image: url("/images/code.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: transparent !important; /* prevents override */
+}
+
+/* CONTACT PAGE HEADER */
+.contact-header {
+  text-align: center;
+  padding-top: 55px;
+  margin-bottom: 10px;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #c1f8ed;
+}
+
+.contact-header p {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+/* TWO-COLUMN LAYOUT */
+.contact-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* LEFT COLUMN */
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  min-width: 200px;
+}
+
+/* CONTACT BOXES */
+.contact-box {
+  background: #f7f7f7;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22), 0 0 15px rgba(173, 242, 217, 0.75);
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28), 0 0 22px rgba(173, 242, 217, 1);
+}
+
+/* HEADINGS */
+.contact-box h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  margin-bottom: 15px;
+}
+
+.contact-left p {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
+}
+
+.contact-box {
+  text-align: center;
+}
+
+/* FOLLOW ME */
+.follow-me .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.follow-me .social-icons img {
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+/* Make LinkedIn slightly bigger */
+.follow-me .social-icons img[alt="LinkedIn"] {
+  width: 48px;
+  height: 48px;
+}
+
+.follow-me .social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* RIGHT COLUMN: FORM */
+.contact-right {
+  width: 65%; /* main form area */
+  min-width: 300px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22), 0 0 15px rgba(173, 242, 217, 0.75);
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-right:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28), 0 0 22px rgba(173, 242, 217, 1);
+}
+
+/* FORM STYLING */
+.formspree-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formspree-container label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.formspree-container input,
+.formspree-container textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.formspree-container textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.formspree-container button {
+  padding: 12px 16px;
+  background-color: #4b79ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.formspree-container button:hover {
+  background-color: #3558d6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* stack left + right vertically */
+    align-items: center;
+  }
+
+  .contact-left {
+    width: 90%;
+    min-width: 300px; /* prevent box from getting too narrow */
+    margin-bottom: 20px;
+  }
+
+  .contact-right {
+    width: 90%;
+    min-width: 300px;
+  }
+}

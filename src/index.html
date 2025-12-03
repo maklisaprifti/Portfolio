@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maklisa Portfolio</title>
+    <meta charset="UTF-8" />
+
+    <script src="./index.js" type="module" defer></script>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <header>
+      <div class="container">
+        <div class="section left">
+          <img src="/images/logo.png" alt="Logo" class="logo" />
+          <h1>Maklisa's Studio</h1>
+        </div>
+
+        <div class="header-inner">
+          <!-- Hamburger button -->
+          <button class="hamburger" aria-label="Open Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="nav" role="navigation" aria-label="Main navigation">
+            <ul>
+              <li><a href="/src/index.html" class="nav-link">Home</a></li>
+              <li>
+                <a href="/src/Portfolio/portfolio.html" class="nav-link"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="/src/About/about.html" class="nav-link">About Me</a>
+              </li>
+              <li>
+                <a href="/src/Contact/contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- INTRODUCTION SECTION -->
+      <section class="intro-section">
+        <h2>Where Creativity Meets Clean Code</h2>
+        <p>
+          I'm a full-stack developer with a passion for building clean,
+          intuitive, and visually engaging digital experiences. I blend
+          creativity with strong technical skills, crafting applications that
+          are functional, accessible, and meaningful. My work spans frontend
+          development, database systems, and thoughtful user experience design.
+        </p>
+      </section>
+
+      <!-- FEATURED WORK SECTION -->
+      <section class="featured-section">
+        <h2>Featured Work</h2>
+
+        <div class="featured-container">
+          <!-- PROJECT 1 -->
+          <div class="featured-card">
+            <img src="/images/Mindful.png" alt="Project 1" />
+            <h3>Mindful Media App</h3>
+            <p>A wellness-focused platform designed for healthy habits.</p>
+            <a href="Portfolio/portfolio.html" class="view-project-btn"
+              >View Project</a
+            >
+          </div>
+
+          <!-- PROJECT 2 -->
+          <div class="featured-card">
+            <img src="/images/Skribble.png" alt="Project 2" />
+            <h3>Skribble Journaling App</h3>
+            <p>A gamified journaling experience for children and teens.</p>
+            <a href="Portfolio/portfolio.html" class="view-project-btn"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- QUOTE SECTION -->
+      <section class="tagline-section">
+        <p>"Creating with purpose. Designing with passion."</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>
+          © <span id="currentYear"></span> Maklisa's Studio | Designed by
+          Maklisa Prifti
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/maklisa-prifti" target="_blank">
+            <img id="linkedin" src="/images/linkedin.jpg" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/tuk26019" target="_blank">
+            <img id="github" src="/images/github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
