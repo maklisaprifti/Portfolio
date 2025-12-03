@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const projects = [
     {
-      image: "/images/Skribble.png",
+      image: "../images/Skribble.png",
       name: "Skribble",
       description:
         "Collaborated on the front-end team to develop an app encouraging children to journal their emotions regularly. Designed UI components for mobile apps and web.",
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://github.com/capstone-projects-2024-fall/aldwairi-projects-skribble",
     },
     {
-      image: "/images/Mindful.png",
+      image: "../images/Mindful.png",
       name: "Mindful Media",
       description:
         " Led a team of three in designing a social media app promoting healthy habits via diet and exercise. Applied full UX design processes: ideation, user personas, wireframing, prototyping, and testing.",
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://maklisaprifti.wixsite.com/ux-project",
     },
     {
-      image: "/images/SkillShareHub.png",
+      image: "../images/SkillShareHub.png",
       name: "SkillShareHub",
       description:
         "Led a team of three to design and implement a relational database system. Created an ER diagram with 5+ entities and 4+ binary relationships using SQL Developer, including a many-to- many relationships between students and courses.",
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://github.com/tuk26019/SkillShareHub-Operational-Database-",
     },
     {
-      image: "/images/Land.png",
+      image: "../images/Land.png",
       name: "Land of Adventure",
       description:
         "Developed a website supporting user sign-up/login and data input for travel destinations, activities, ratings, costs, visit dates, and images. Managed backend database with MySQL, ensuring data integrity and accessibility.",
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://github.com/tuk26019/Land_of_Adventure",
     },
     {
-      image: "/images/Explore.png",
+      image: "../images/Explore.png",
       name: "Explore More",
       description:
         "A travel and culture platform showcasing destinations, local experiences, and culinary highlights to inspire exploration and cultural connection. Provides practical tips and insights for planning memorable adventures.",
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://github.com/tuk26019/Explore_More",
     },
     {
-      image: "/images/Cosmic.png",
+      image: "../images/Cosmic.png",
       name: "Cosmic Highlight",
       description:
         "Built a space-themed website using WordPress, customizing the layout, design, and content structure to showcase unique space missions and discoveries. Focused on clean visuals, organized categories, and user-friendly navigation.",
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://drive.google.com/file/d/1sAsY-bwQzGjkJjGRlz81QaQO6pzsmOIE/view?usp=sharing",
     },
     {
-      image: "/images/Unleashed.png",
+      image: "../images/Unleashed.png",
       name: "Unleashed Media",
       description:
         "Redesigned and modernized a website using HTML, CSS, and JavaScript on CodePen, enhancing usability, responsiveness, and overall user experience.",
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://drive.google.com/drive/folders/1DOYHM1ZfTxBPQpFG8gxn5tJ894khrtUM?usp=sharing",
     },
     {
-      image: "/images/Database.png",
+      image: "../images/Database.png",
       name: "Database Project",
       description:
         "Worked on database projects using Google Sheets, including organizing movie types and managing data for ‘Project Cupcake,’ gaining experience in data organization, sorting, and basic analysis.",
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://drive.google.com/drive/folders/1wmp3ZzELIY6ytyro59ehT2aqSurT5lvS?usp=sharing",
     },
     {
-      image: "/images/JavaScript.png",
+      image: "../images/JavaScript.png",
       name: "JavaScript Projects",
       description:
         "Developed interactive JavaScript projects including a tip calculator and a ‘Click the Target’ game, gaining hands-on experience with DOM manipulation, event handling, and basic programming logic.",
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://drive.google.com/drive/folders/1v1eYB14BZRvYIXMC2Uq7bDv4neqLjFeQ?usp=sharing",
     },
     {
-      image: "/images/HTML.png",
+      image: "../images/HTML.png",
       name: "HTML/CSS Project",
       description:
         "Created a simple website using HTML and CSS with initial guidance from AI, then customized and personalized it to enhance design, layout, and user experience",
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://drive.google.com/drive/folders/1JL0AZYUp1sgZHWN1UZa_oDkW-PEzSzbW?usp=sharing",
     },
     {
-      image: "/images/Python.png",
+      image: "../images/Python.png",
       name: "Magic 8 Ball",
       description:
         "Built a simple Python Magic 8-Ball program that provides random answers to user questions, demonstrating basic programming concepts like conditionals, user input, and randomization",
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://drive.google.com/drive/folders/13bXg1KjgcHa26saxVTq27U-kfnOu4PWl?usp=sharing",
     },
     {
-      image: "/images/AI.png",
+      image: "../images/AI.png",
       name: "AI Project",
       description:
         "Developed a simple jumping game using HTML and created a Python lesson plan with the guidance of AI, combining hands-on coding experience with structured learning for programming skills.",
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://drive.google.com/drive/folders/1tZrrTtUkougY17dwxgCDkgPmDias7rkb?usp=sharing",
     },
     {
-      image: "/images/RCM.png",
+      image: "../images/RCM.png",
       name: "RCM Guide",
       description:
         "Created a Revenue Cycle Management (RCM) study guide to simplify key concepts, processes, and best practices, helping users understand billing, claims, and financial workflows in healthcare.",
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://docs.google.com/document/d/1iNShDglO1bl68g-tFl3bH9iziy1kzcPUCu_LJ8NWHCE/edit?usp=sharing",
     },
     {
-      image: "/images/GIS.png",
+      image: "../images/GIS.png",
       name: "GIS",
       description:
         "Completed a GIS project focused on creating and editing maps while learning to use ArcGIS. Gained hands-on experience in mapping techniques, spatial data management, and basic geographic analysis",

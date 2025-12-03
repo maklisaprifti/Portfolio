@@ -3,7 +3,7 @@ body {
   padding-top: 130px;
   padding-bottom: 45px;
 
-  background-image: url("/images/code.jpeg");
+  background-image: url("../images/code.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
