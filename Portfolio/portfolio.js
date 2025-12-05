@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: "Nov 2025 - 3 days",
       platform: "Wordpress, Figma",
       tools: "Wordpress, Figma",
-      link: "https://drive.google.com/file/d/1sAsY-bwQzGjkJjGRlz81QaQO6pzsmOIE/view?usp=sharing",
+      link: "https://drive.google.com/drive/folders/1bdlqMgRhCjlQhA_qxKwCehigrE132t_5?usp=sharing",
     },
     {
       image: "../images/Unleashed.png",
@@ -176,3 +176,4 @@ document.addEventListener("DOMContentLoaded", () => {
     container.appendChild(card);
   });
 });
+
