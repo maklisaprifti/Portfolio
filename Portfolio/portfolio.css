@@ -11,6 +11,18 @@ main {
   padding: 220px 20px 100px 20px; /* space below navbar */
 }
 
+/* CODE RAIN BACKGROUND */
+#codeRain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
 /* Title */
 .portfolio-title {
   text-align: center;
